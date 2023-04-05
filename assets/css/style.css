@@ -1,0 +1,322 @@
+@font-face {
+    font-family: Lora;
+    src: url(../font/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --maincolor1: #2e2e2e;
+    --maincolor2: #1d2c2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENERAL STYLE */
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3 {
+    font-family: Lora, sans-serif;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 500;
+    letter-spacing: 3rem;
+    margin-right: -3rem;
+    color: var(--black);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.grey h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+.grey .left {
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--maincolor2);
+}
+
+a {
+    font-family: WorkSans;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+}
+
+p {
+    font-family: WorkSans;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    color: var(--maincolor2);
+    /* opacity: 50%; */
+}
+
+.grey p {
+    color: var(--white);
+}
+
+.featured p {
+    margin-bottom: 8rem;
+}
+
+label {
+    font-family: Lora;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+footer div, footer div a {
+    font-family: Lora, sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+/* ERSTE SECTION - .start */
+.start {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.HH {
+    width: 35vw;
+    text-align: center;
+}
+
+.img-article {
+    height: 100vh;
+    width: 65vw;
+    background: url(../img/design-interior-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* HEADER/NAV */
+
+header {
+    background-color: var(--maincolor1);
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div a {
+    padding: 0 6vw;
+}
+
+
+/* ZWEITE SECTION - .STORY */
+
+.story {
+    background-color: var(--maincolor1);
+    padding: 20rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.story-img {
+    width: 60vw;
+    height: auto;
+}
+
+.grey {
+    padding: 0 4rem;
+}
+
+/* DRITTE SECTION - .FEATURED */
+
+.featured {
+    padding: 20vh 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.feature-article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div img {
+    width: 30vw;
+    height: auto;
+}
+
+/* VIERTE SECTION - .GET-IN-TOUCH */
+.get-in-touch {
+    background-color: var(--maincolor1);
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.get-in-touch article {
+    width: 50vw;
+}
+
+form {
+    width: 25vw;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 1.5vh;
+    color: var(--maincolor2);
+}
+
+input[type="submit"] {
+    padding: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 0 2rem;
+    height: 5vh;
+    background-color: var(--maincolor2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav a {
+    padding: 0 2vw;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 576px) {
+    
+    /* ALLGEMEIN */
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+  
+    h3 {
+        font-size: 0.9rem;
+    }
+    
+    a {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-family: WorkSans;
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    footer div, footer div a {
+        font-size: 0.8rem;
+    }
+    /* ERSTE SECTION */
+    .start {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .HH {
+        padding: 15vh 0;
+        height: 40vh;
+    }
+
+    .img-article {
+        width: 100%;
+    }
+
+    /* NAV / HEADER */
+    nav img {
+        width: 10%;
+        height: auto;
+    }
+
+    /* SECTION 2 */
+    .story {
+        flex-direction: column;
+        padding: 10rem 0;
+    }
+
+    .story-img {
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+
+    nav div a {
+        padding: 0 4vw;
+    }
+
+    /* SECTION 3 */
+    .featured {
+        padding: 10vh 0;
+    }
+
+    .feature-article {
+        flex-direction: column;
+    }
+
+    div img {
+        width: 80vw;
+        height: auto;
+    }
+
+    iframe {
+        width: 80vw;
+        height: auto;
+    }
+
+    /* SECTION 4 */
+    .get-in-touch {
+        flex-direction: column;
+    }
+
+    .get-in-touch article {
+        width: 90vw;
+    }
+    
+    form {
+        width: 75vw;
+    }
+
+}
